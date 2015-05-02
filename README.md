@@ -1,16 +1,21 @@
 ## Website Performance Optimization portfolio project
 
-	I got a 90 pagespeed target
+## Here are the results
+
+	'I got a 90 pagespeed target'
 1. I resized and used image compression for the images to load quicker
 2. On the html page, the thumbnails had hyperlinks attached to them so I took those images and stored them locally in my image file
 3. I minified the bootsrap CSS file 
+
 ![alt text](img/pagespeedInsight.png)
 
-	I got below 60 fps on my pizza site
+	'I got below 60 fps on my pizza site'
 1. I cleaned up the for loops by taking out the fields that declared variables and did the calculations outside the for loop.
 2. Adjusted the amount of pieces that were to be made because the site looked similar when fewer pizzas were added.
 3. I used Paul Lewis's debouncing method for my scroll events because my pizza site was constantly being reflowed and repainted in the for loop.
 4. I used requestAnimationFrame to handle visual updates
+5. I also used translate in CSS for the .mover class because it was more beneficial for paint time.- I saw this from Paul Irish's "Moving elements with translate is better video"
+
 ![alt text](img/60fps.png)
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
